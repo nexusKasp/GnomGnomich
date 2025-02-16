@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/title.png" type="image/x-icon">
+    <title>GnomGnomich</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top-row">
+                <nav class="header__nav">
+                    <a href="#">Главная</a>
+                    <a href="#">Покупки</a>
+                    <a href="#">Блог</a>
+                    <a href="#">О нас</a>
+                    <div class="dropdown">
+                        <a href="#" onclick="toggleDropdown(event)">Связь <span class="arrow"><img src="./img/svg-icon/Vector.svg" alt="vector"></span></a>
+                        <div class="dropdown-content">
+                            <a href="#">Контакты</a>
+                            <a href="#">Поддержка</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                            <a href="#">Еще что-то</a>
+                         </div>
+                    </div>
+                </nav>
+                <div class="firm-name">
+                    <h3>Gnom<span>Gnomich</span></h3>
+                </div>
+               <div class="header__svg-image">
+                    <a href="#!"><img class="mobile-none" src="./img/svg-icon/user-svg.svg" alt="user" /></a>
+                    <a href="#!"><img src="./img/svg-icon/shopping-bag-svg.svg" alt="bag" /></a>
+                    <a href="#!"><img class="mobile-none"  src="./img/svg-icon/search-svg.svg" alt="search" /></a>
+              </div>
+                <div class="burger" onclick="toggleMenu()">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                </div>
+            </div>
+            </div>
+            <div class="create_line">
+            </div>
+                <div class="container">
+                    <div class="header__content">
+                        <div class="header__column">
+                            <h1 class="header__title">Самая хайповая коллекция </h1>
+                            <p class="header__suptitle">Наша коллекция позволит вашим детям <br> держать баланс между нефором и скромно  <br> одетым ребенком</p>
+                            <a href="#!">Купить</a>
+                        </div>
+                        <img src="./img/header/sister-bg.png" class="header__img" alt="girl-shopping">
+                    </div>
+                    <div class="header__bottom">
+                        <div class="firm-name mobile">
+                            <h3>Gnom<span>Gnomich</span></h3>
+                        </div>
+                    </div>
+                </div>
+         </div>
+      </header>
+      <nav class="mobile-menu" id="mobileMenu">
+        <span class="close" onclick="toggleMenu()">✖</span>
+        <a href="#">Главная</a>
+        <a href="#">Покупки</a>
+        <a href="#">Блог</a>
+        <a href="#">О нас</a>
+        <div class="dropdown">
+          <a href="#" onclick="toggleDropdown(event)">Связь <span class="arrow"></span></a>
+          <div class="dropdown-content">
+            <a href="#">Контакты</a>
+            <a href="#">Поддержка</a>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section class="inserts">
+            <div class="container">
+                <div class="inserts__grid">
+                    <div class="insert__item">
+                        <img src="./img/kids/kid-1.jpg" class="kids__img"  alt="kidshopp">
+                        <div class="insert__calltoaction">
+                            <h4 class="insert__name">
+                                На все сезоны <br> года
+                            </h4>
+                            <a href="#!">Купить сейчас</a>
+                        </div>
+                    </div>
+                    <div class="insert__item">
+                        <img src="./img/kids/kid-2.jpg" class="kids__img"  alt="kidshopp">
+                        <div class="insert__calltoaction">
+                            <h4 class="insert__name">
+                                Летняя одежда <br> со скидкой 
+                            </h4>
+                            <a href="#!">Купить сейчас</a>
+                        </div>
+                    </div>
+                    <div class="insert__item">
+                        <img src="./img/kids/kid-3.jpg" class="kids__img"  alt="kidshopp">
+                        <div class="insert__calltoaction">
+                            <h4 class="insert__name">
+                                Акции к черной <br> пятнице 
+                            </h4>
+                            <a href="#!">Купить сейчас</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products__title">
+                    <h3>Новые товары </h3>
+                    <p>Ознакомьтесь с нашими самыми популярными и продаваемыми товарами!</p>
+                </div>
+                <div class="products__grid">
+                    <div class="products__item">
+                        <div class="products__img">
+                            <img src="./img/catalog/product-1.png" class="prod-image" alt="catalog-product">
+                        </div>
+                        <div class="product__description">
+                            <p class="product-name">Abibas Куртка</p>
+                            <div class="product-star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                            </div>
+                            <p class="product-price">4500 Р</p>
+                        </div>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__img">
+                            <img src="./img/catalog/product-2.png" class="prod-image tablet" alt="catalog-product">
+                        </div>
+                        <div class="product__description">
+                            <p class="product-name">Mayoral Куртка</p>
+                            <div class="product-star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                            </div>
+                            <p class="product-price">2500 Р</p>
+                        </div>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__img">
+                            <img src="./img/catalog/product-3.png" class="prod-image tablet" alt="catalog-product">
+                        </div>
+                        <div class="product__description">
+                            <p class="product-name">Happy Baby Кардиган</p>
+                            <div class="product-star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                            </div>
+                            <p class="product-price"><span class="line-text">1500 Р </span> <span>950 Р</span></p>
+                        </div>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__img">
+                            <img src="./img/catalog/product-4.png" class="prod-image" alt="catalog-product">
+                        </div>
+                        <div class="product__description">
+                            <p class="product-name">Sterntaler Шапка</p>
+                            <div class="product-star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                            </div>
+                            <p class="product-price">800 Р</p>
+                        </div>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__img">
+                            <img src="./img/catalog/product-5.png" class="prod-image tablet" alt="catalog-product">
+                        </div>
+                        <div class="product__description">
+                            <p class="product-name">Panolino Лонгслив</p>
+                            <div class="product-star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                            </div>
+                            <p class="product-price">3400 Р</p>
+                        </div>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__img">
+                            <img src="./img/catalog/product-6.png" class="prod-image tablet" alt="catalog-product">
+                        </div>
+                        <div class="product__description">
+                            <p class="product-name">Sela футболка</p>
+                            <div class="product-star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                            </div>
+                            <p class="product-price">1600 Р</p>
+                        </div>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__img">
+                            <img src="./img/catalog/product-7.png" class="prod-image" alt="catalog-product">
+                        </div>
+                        <div class="product__description">
+                            <p class="product-name">Sela джинсы</p>
+                            <div class="product-star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                            </div>
+                            <p class="product-price">1900 Р</p>
+                        </div>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__img">
+                            <img src="./img/catalog/product-8.png" class="prod-image"  alt="catalog-product">
+                        </div>
+                        <div class="product__description">
+                            <p class="product-name">Happy Baby</p>
+                            <div class="product-star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                                <img src="./img/svg-icon/star-svg.svg" alt="star">
+                            </div>
+                            <p class="product-price">2200 Р</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newbie">
+            <div class="container">
+                <div class="products__title">
+                    <h3>Горячие новинки</h3>
+                    <p>Ознакомьтесь с нашими самыми популярными и продаваемыми товарами!</p>
+                </div>
+                <div class="newbie__grid">
+                    <div class="newbie__item">
+                        <div class="newbie__kid">
+                            <img src="./img/kids/kid-4.jpg" alt="kid-novinki">
+                        </div>
+                        <div class="newbie__calltoaction">
+                            <h3 class="calltoaction-title">Летняя суета</h3>
+                            <a href="#!" class="calltoaction-link"><img src="./img/svg-icon/Arrow.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+
+                    <div class="newbie__item">
+                        <div class="newbie__kid">
+                            <img src="./img/kids/kid-5.jpg" alt="kid-novinki">
+                        </div>
+                        <div class="newbie__calltoaction">
+                            <h3 class="calltoaction-title">Летняя суета</h3>
+                            <a href="#!" class="calltoaction-link"><img src="./img/svg-icon/Arrow.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+
+                    <div class="newbie__item">
+                        <div class="newbie__kid">
+                            <img src="./img/kids/kid-6.jpg" alt="kid-novinki">
+                        </div>
+                        <div class="newbie__calltoaction">
+                            <h3 class="calltoaction-title">Летняя суета</h3>
+                            <a href="#!" class="calltoaction-link"><img src="./img/svg-icon/Arrow.svg" alt="arrow"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="exclusive">
+            <div class="container">
+                <div class="exclisive_bg">
+                    <div class="exclusive__title">
+                        <h3>Эксклюзивно <br>на GnomGnomich</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="albom">
+            <div class="container">
+                <div class="albom__grid">
+                    <div class="albom__item">
+                        <img src="./img/albom/image.jpg" alt="image">
+                        <p class="product-name">Acoola Jacket</p>
+                        <p class="product-price">BEZDAR</p>
+                    </div>
+                    <div class="albom__item">
+                        <img src="./img/albom/image-1.jpg" alt="image">
+                        <p class="product-name">Happy Baby</p>
+                        <p class="product-price">NEGRO</p>
+                    </div>
+                    <div class="albom__item">
+                        <img src="./img/albom/image-2.jpg" alt="image">
+                        <p class="product-name">Mango Kids</p>
+                        <p class="product-price">COMFY</p>
+                    </div>
+                    <div class="albom__item">
+                        <img src="./img/albom/image-3.jpg" alt="image">
+                        <p class="product-name">Skirt Off</p>
+                        <p class="product-price">BEZDAR</p>
+                    </div>
+                    <div class="albom__item">
+                        <img src="./img/albom/image-4.jpg" alt="image">
+                        <p class="product-name">Acoola Jacket</p>
+                        <p class="product-price">BEZDAR</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="app">
+            <div class="container">
+                <div class="app__column">
+                    <h4 class="app__title">
+                        Приложение GnomGnomich
+                    </h4>
+                    <p class="app__suptitle">
+                        Покупать товары теперь можно с кайфом
+                    </p>
+                    <a href="#!" class="firm-name">G<span>G</span></a>
+                </div>
+                <div class="sale">Скидка на первую покупку</div>
+            </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="create_line">
+        </div>  
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__nav-left">
+                    <nav>
+                        <ul class="footer__nav-left-list">
+                            <li class="firm-name footer-title">Gnom<span class="footer-firm">Gnomic</span></li>
+                            <li class="footer__citate">
+                                Жизнь не спрашивает, готов ли ты. Она либо ломает тебя, либо закаляет. Вопрос только в том, сдашься ты или станешь тем, кого невозможно сломать нфтм
+                            </li>
+                            <li><span>Телефон:</span><a href="tel:8 800 555-35-35">8-928-286-55-66</a></li>
+                            <li><span>Почта:</span><a href="email">Gnomg@gmail.com </a></li>
+                            <li><span>Адресс:</span><a href="#!">Красная площадь</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__nav">
+                    <nav>
+                        <ul class="footer__nav-list">
+                            <li><span>Наша компания</span></li>
+                            <li><a href="#!">ГЛАВНАЯ</a></li>
+                            <li><a href="#!">О НАС</a></li>
+                            <li><a href="#!">НАША ИСТОРИЯ</a></li>
+                            <li><a href="#!">СВЯЗАТЬСЯ</a></li>
+                            <li><a href="#!">ВАКАНСИИ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__nav">
+                    <na>
+                        <ul class="footer__nav-list">
+                            <li><span>Помощь</span></li>
+                            <li><a href="#!">СТАТУС ЗАКАЗА </a></li>
+                            <li><a href="#!">МОИ ЗАКАЗЫ</a></li>
+                            <li><a href="#!">УСЛОВИЯ ДОСТАВКИ</a></li>
+                            <li><a href="#!">ВОЗВРАТ</a></li>
+                            <li><a href="#!">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__nav-right-bottom">
+                    <h3 class="footer__sale">Скидка  <span>10%</span> за подписку </h3>
+                    <form class="footer__form">
+                        <input class="form__input" type="email" placeholder="E-mail">
+                        <button class="form__button">Подписаться</button>
+                    </form>
+                    <a href="#!">Условия акции</a>
+                </div>
+             </div>
+        </div>
+
+            <div class="create_line">
+            </div>  
+      </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+            } else {
+                menu.classList.add('active');
+            }
+        }
+        
+        function toggleDropdown(event) {
+            event.preventDefault();
+            const dropdown = event.target.closest('.dropdown');
+            dropdown.classList.toggle('active');
+            const arrow = dropdown.querySelector('.arrow');
+            arrow.textContent = dropdown.classList.contains('active') ? '^' : 'v';
+        }
+    </script>
+</body>
+</html>
